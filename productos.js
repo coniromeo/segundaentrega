@@ -31,21 +31,21 @@ if (paises == null){
     alert(pais); 
 }            
 */
-const btn = document.querySelector("div.nov1");
-document.createElement ("button");
+const btn = document.getElementsByClassName("nov1");
+const btncompra = document.createElement ("button");
 //asignar un id o una class
-btn.id= 'btn1';
+//btncompra.id= 'btn1';
 //asignarle nombre
-btn.innerHTML="Hace Click aqui para conocer que trae el bolson esta semana";
+btncompra.innerHTML= "Hace Click aqui para conocer que trae el bolson esta semana";
 // escuchar un evento
-btn.addEventListener('click',function(){
+btncompra.addEventListener('click',function(){
     const h3 = document.createElement ('h3');
     h3.innerHTML ="el bolson trae de verduras trae papa batata zanahoria choclo y cebolla. el bolson de fruta trae mango, kiwi, manzana, banana, mandarinas y naranjas";
     document.body.appendChild(h3);
 })
 
 //agregar el boton al dom
-document.body.appendChild(btn)
+document.body.appendChild(btncompra)
 
 /*const btn2 = document.createElement ("button");
 //asignar un id o una class
